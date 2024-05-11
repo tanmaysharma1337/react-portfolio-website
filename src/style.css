@@ -1,0 +1,58 @@
+#root
+{
+    color: rgb(134, 134, 134);
+    font-size: small;
+}
+
+
+.header
+{
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    background-color: rgb(37, 39, 40);
+}
+
+.header-navigation-buttons
+{
+    margin: 4px;
+    margin-left: 3%;
+    display: flex;
+    justify-content: start;
+}
+.header-navigation-buttons li
+{
+    list-style-type: none;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.loc-bar
+{
+    position: fixed;
+    border-right: 2px inset rgb(71, 71, 71);
+    text-align: right;
+    margin: 0px;
+    top: 0px;
+    padding-top: 20px;
+    margin-top: 9px;
+    width: 4%;
+    background-color: rgb(47, 52, 54);
+}
+
+.loc-bar p
+{
+    display: block;
+    margin: 1px;
+    margin-right: 40%;
+}
+.main-content
+{
+    margin-top: 30px;
+    margin-left: 5%;
+}
+.main-content p
+{
+    margin: 1px;
+}
+
