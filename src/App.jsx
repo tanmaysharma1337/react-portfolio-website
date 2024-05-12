@@ -1,23 +1,20 @@
 import { useState } from 'react'
 import './App.css'
+import './style.css'
 import Navbar from './components/Navbar'
 import LOCBar from './components/LOCBar'
-import './style.css'
+import HomeContent from './components/HomeContent.jsx'
+import ContentWrapper from './components/ContentWrapper.jsx'
 
 function App() {
 
   return (<div>
     <LOCBar></LOCBar>
     <Navbar></Navbar>
-    <div className='main-content'>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
-
-    </div>
+    <ContentWrapper>
+      <HomeContent></HomeContent>
+    </ContentWrapper>
+   
     </div>
   )
 }

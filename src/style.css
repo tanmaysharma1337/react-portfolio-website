@@ -11,20 +11,45 @@
     top: 0px;
     position: fixed;
     background-color: rgb(37, 39, 40);
+    display: flex;
+    align-items:center;
+}
+
+.header-logo
+{
+    border-radius: 50%;
+    width: 30px;
+    padding: 2px;
+    margin-left: 25px;
 }
 
 .header-navigation-buttons
 {
     margin: 4px;
-    margin-left: 3%;
+    margin-left: 1%;
     display: flex;
     justify-content: start;
 }
 .header-navigation-buttons li
 {
     list-style-type: none;
-    margin-left:20px;
-    margin-right:20px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.header-navigation-buttons li a
+{
+    text-decoration: none;
+    color: rgb(134, 134, 134);
+    border-radius: 10%;
+    padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.header-navigation-buttons li a:hover
+{
+    background-color: rgb(62, 63, 63);
 }
 
 .loc-bar
@@ -34,10 +59,10 @@
     text-align: right;
     margin: 0px;
     top: 0px;
-    padding-top: 20px;
+    padding-top: 30px;
     margin-top: 9px;
     width: 4%;
-    background-color: rgb(47, 52, 54);
+    background-color: rgb(43, 43, 43);
 }
 
 .loc-bar p
@@ -48,7 +73,7 @@
 }
 .main-content
 {
-    margin-top: 30px;
+    margin-top: 40px;
     margin-left: 5%;
 }
 .main-content p
