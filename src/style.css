@@ -15,12 +15,16 @@
     align-items:center;
 }
 
+.header a
+{
+    cursor: pointer;
+}
+
 .header-logo
 {
-    border-radius: 50%;
-    width: 30px;
+    width: 20px;
     padding: 2px;
-    margin-left: 25px;
+    margin-left: 30px;
 }
 
 .header-navigation-buttons
@@ -81,3 +85,30 @@
     margin: 1px;
 }
 
+.code-executed
+{
+    font-size: large;
+}
+
+.about-page
+{
+    align-items: center;
+    display: flex;
+}
+
+.about-page img
+{
+    padding: 50px;
+}
+
+.header-right-content
+{
+    justify-content: end;
+    display: flex;
+    width: 100%;
+}
+
+.header-right-content a
+{
+    margin-right: 50px;
+}
