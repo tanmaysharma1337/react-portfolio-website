@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
 const LOCBar = () => {
   return (
-    <div className='loc-bar'>
+    <div className="loc-bar">
       <p>1</p>
       <p>2</p>
       <p>3</p>
@@ -104,7 +104,7 @@ const LOCBar = () => {
       <p>99</p>
       <p>100</p>
     </div>
-  )
-}
+  );
+};
 
-export default LOCBar
+export default LOCBar;

@@ -13,21 +13,24 @@ import ProgrammingContentRun from "./components/ProgrammingContentRun.jsx";
 import GamingContent from "./components/GamingContent.jsx";
 import GamingContentRun from "./components/GamingContentRun.jsx";
 
-
 function App() {
   const Pages = {
     Home: {
-      text:<HomeContent></HomeContent>,
-      run:<HomeContentRun></HomeContentRun>},
+      text: <HomeContent></HomeContent>,
+      run: <HomeContentRun></HomeContentRun>,
+    },
     About: {
-      text:<AboutContent></AboutContent>,
-      run:<AboutContentRun></AboutContentRun>},
+      text: <AboutContent></AboutContent>,
+      run: <AboutContentRun></AboutContentRun>,
+    },
     Programming: {
-      text:<ProgrammingContent></ProgrammingContent>,
-      run:<ProgrammingContentRun></ProgrammingContentRun>},
+      text: <ProgrammingContent></ProgrammingContent>,
+      run: <ProgrammingContentRun></ProgrammingContentRun>,
+    },
     Gaming: {
-      text:<GamingContent></GamingContent>,
-      run:<GamingContentRun></GamingContentRun>},
+      text: <GamingContent></GamingContent>,
+      run: <GamingContentRun></GamingContentRun>,
+    },
   };
 
   const [currentPage, setCurrentPage] = useState(Pages["Home"]["text"]);

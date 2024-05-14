@@ -1,11 +1,7 @@
-import React, { useRef } from 'react'
+import React, { useRef } from "react";
 
-const ContentWrapper = ({children}) => {
-  return (
-    <div className='main-content'>
-        {children}
-    </div>
-  )
-}
+const ContentWrapper = ({ children }) => {
+  return <div className="main-content">{children}</div>;
+};
 
-export default ContentWrapper
+export default ContentWrapper;

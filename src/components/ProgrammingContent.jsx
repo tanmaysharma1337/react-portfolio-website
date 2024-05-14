@@ -4,8 +4,8 @@ const ProgrammingContent = () => {
   const [content, setContent] = useState(" ");
   const [contentText, setContentText] = useState(<p> </p>);
   const [previousContent, setPreviousContent] = useState([]);
-  const [currentIndex,setCurrentIndex] = useState(0)
-  const [currentLine,setCurrentLine] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentLine, setCurrentLine] = useState(0);
   const text = `import React from 'react '
 
   const ProgrammingContent = () => {
@@ -18,7 +18,7 @@ const ProgrammingContent = () => {
       With each project, each challenge conquered, my affection for programming deepened, as I discovered its infinite possibilities and the joy of building something from scratch. 
       Programming isn't just a skill; it's a love story that continues to evolve with every line of code I write.</p> 
   
-      <h4>My tech stack includes:</h4> 
+      <h4>My current tech stack includes:</h4> 
   
       <p><span style={{fontWeight:"bold"}}>Languages:</span> Python, JavaScript, C#, MySQL</p> 
       <p><span style={{fontWeight:"bold"}}>Frontend:</span> ReactJS, HTML5, CSS, PyQt5, TailwindCSS</p> 
@@ -28,29 +28,30 @@ const ProgrammingContent = () => {
     )  
   }  
   
-  export default ProgrammingContent `.split("\n")
-
+  export default ProgrammingContent `.split("\n");
 
   useEffect(() => {
-  if (currentIndex < text[currentLine].length) {
-    const timeout = setTimeout(() => {
-      setContent(prevText => prevText+text[currentLine][currentIndex]);
-      setContentText(<p>{content}│</p>)
-      setCurrentIndex(prevIndex => prevIndex + 1);
-    }, 1);
+    if (currentIndex < text[currentLine].length) {
+      const timeout = setTimeout(() => {
+        setContent((prevText) => prevText + text[currentLine][currentIndex]);
+        setContentText(<p>{content}│</p>);
+        setCurrentIndex((prevIndex) => prevIndex + 1);
+      }, 1);
 
-    return () => clearTimeout(timeout);
-  }
-  else if(currentLine < text.length-1)
-  {
-    let newPrevContent = createElement("p",{key:currentLine},contentText.props.children[0])
-    setContent(prevText => "")
-    setContentText(<p> </p>)
-    setPreviousContent(prevContent => [...prevContent,newPrevContent])
-    setCurrentLine(prevLine => prevLine+1)
-    setCurrentIndex(0);
-  }
-}, [currentIndex,text,currentLine]);
+      return () => clearTimeout(timeout);
+    } else if (currentLine < text.length - 1) {
+      let newPrevContent = createElement(
+        "p",
+        { key: currentLine },
+        contentText.props.children[0]
+      );
+      setContent((prevText) => "");
+      setContentText(<p> </p>);
+      setPreviousContent((prevContent) => [...prevContent, newPrevContent]);
+      setCurrentLine((prevLine) => prevLine + 1);
+      setCurrentIndex(0);
+    }
+  }, [currentIndex, text, currentLine]);
 
   return (
     <div>
