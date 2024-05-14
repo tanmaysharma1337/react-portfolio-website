@@ -30,7 +30,13 @@ const AboutContentRun = () => {
         feel most alive, exploring endless possibilities and constantly learning
         something new. And that's why I'm here, ready to dive into the next
         adventure and see where it takes me.{" "}
+        <br />
+        <br />
+        <hr />
       </p>
+      
+      <h3>Check out my socials</h3>
+      <a style={{color:"lightblue"}} href="https://github.com/tanmaysharma1337">Github</a> <a style={{color:"lightblue"}} href="https://www.linkedin.com/in/tanmay-weezzee-sharma/">Linkedin</a>
     </div>
   );
 };
