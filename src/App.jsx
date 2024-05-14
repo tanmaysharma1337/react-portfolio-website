@@ -7,7 +7,11 @@ import HomeContent from "./components/HomeContent.jsx";
 import ContentWrapper from "./components/ContentWrapper.jsx";
 import AboutContent from "./components/AboutContent.jsx";
 import HomeContentRun from "./components/HomeContentRun.jsx";
-import AbountContentRun from "./components/AbountContentRun.jsx";
+import AboutContentRun from "./components/AboutContentRun.jsx";
+import ProgrammingContent from "./components/ProgrammingContent.jsx";
+import ProgrammingContentRun from "./components/ProgrammingContentRun.jsx";
+import GamingContent from "./components/GamingContent.jsx";
+import GamingContentRun from "./components/GamingContentRun.jsx";
 
 
 function App() {
@@ -17,7 +21,13 @@ function App() {
       run:<HomeContentRun></HomeContentRun>},
     About: {
       text:<AboutContent></AboutContent>,
-      run:<AbountContentRun></AbountContentRun>},
+      run:<AboutContentRun></AboutContentRun>},
+    Programming: {
+      text:<ProgrammingContent></ProgrammingContent>,
+      run:<ProgrammingContentRun></ProgrammingContentRun>},
+    Gaming: {
+      text:<GamingContent></GamingContent>,
+      run:<GamingContentRun></GamingContentRun>},
   };
 
   const [currentPage, setCurrentPage] = useState(Pages["Home"]["text"]);

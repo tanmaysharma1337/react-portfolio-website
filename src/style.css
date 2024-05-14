@@ -1,7 +1,7 @@
 #root
 {
     color: rgb(134, 134, 134);
-    font-size: small;
+    font-size: 14px;
 }
 
 
@@ -23,7 +23,7 @@
 .header-logo
 {
     width: 20px;
-    padding: 2px;
+    padding: 8px;
     margin-left: 30px;
 }
 

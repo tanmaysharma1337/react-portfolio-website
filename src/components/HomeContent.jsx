@@ -6,9 +6,19 @@ const HomeContent = () => {
   const [previousContent, setPreviousContent] = useState([]);
   const [currentIndex,setCurrentIndex] = useState(0)
   const [currentLine,setCurrentLine] = useState(0)
-  const text = `<h1>Home</h1> 
-  <h2>Hello, I am Tanmay Sharma</h2> 
-  <h3>Welcome to my Website!</h3> `.split("\n")
+  const text = `import React from 'react' 
+ 
+  const HomeContent = () => { 
+    return ( 
+      <div> 
+        <h1>Home</h1> 
+        <h2>Hello, I am Tanmay Sharma</h2> 
+        <h3>Welcome to my Website!</h3> 
+      </div>  
+    )  
+  }  
+   
+  export default HomeContent `.split("\n")
 
 
   useEffect(() => {
