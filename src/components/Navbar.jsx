@@ -53,7 +53,7 @@ function Navbar(props) {
           </li>
         </ul>
         <div className="header-right-content">
-          <a onClick={runPage} style={{ marginRight: "10px" }}>
+          <a className="run-code-text" onClick={runPage} style={{ marginRight: "10px" }}>
             Run Code
           </a>
           <a onClick={runPage}>
