@@ -99,6 +99,10 @@
   width: 50%;
 }
 
+.content-devider {
+  width: 50%;
+}
+
 @media only screen and (max-width: 600px) {
   .header-navigation-buttons li {
     list-style-type: none;
@@ -117,5 +121,8 @@
     width: 20px;
     padding: 8px;
     margin-left: 0px;
+  }
+  .content-devider {
+    width: 100%;
   }
 }

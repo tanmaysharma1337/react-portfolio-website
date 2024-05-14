@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import profilePicture from "../assets/profile-picture.png";
 
 const AboutContentRun = () => {
+
   return (
     <div className="code-executed">
       <div className="about-page">
@@ -29,14 +30,25 @@ const AboutContentRun = () => {
         Programming is my playground, my canvas, and my passion. It's where I
         feel most alive, exploring endless possibilities and constantly learning
         something new. And that's why I'm here, ready to dive into the next
-        adventure and see where it takes me.{" "}
+        adventure and see where it takes me. <br />
         <br />
-        <br />
-        <hr />
       </p>
-      
+      <div className="content-devider">
+        <hr />
+      </div>
       <h3>Check out my socials</h3>
-      <a style={{color:"lightblue"}} href="https://github.com/tanmaysharma1337">Github</a> <a style={{color:"lightblue"}} href="https://www.linkedin.com/in/tanmay-weezzee-sharma/">Linkedin</a>
+      <a
+        style={{ color: "lightblue" }}
+        href="https://github.com/tanmaysharma1337"
+      >
+        Github
+      </a>{" "}
+      <a
+        style={{ color: "lightblue" }}
+        href="https://www.linkedin.com/in/tanmay-weezzee-sharma/"
+      >
+        Linkedin
+      </a>
     </div>
   );
 };

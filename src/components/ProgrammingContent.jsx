@@ -10,7 +10,7 @@ const ProgrammingContent = () => {
 
   const ProgrammingContent = () => {
     return ( 
-      <div className='code-executed'> 
+      <div> 
       <h2>Programming</h2>  
       <p style={{width:"40%"}}>My journey into programming began with a spark of curiosity that ignited into a passionate love affair with code. 
       It all started with a desire to understand the mechanics behind the digital world, to unravel its mysteries one line of code at a time. 
@@ -34,9 +34,9 @@ const ProgrammingContent = () => {
     if (currentIndex < text[currentLine].length) {
       const timeout = setTimeout(() => {
         setContent((prevText) => prevText + text[currentLine][currentIndex]);
-        setContentText(<p>{content}│</p>);
+        setContentText(<p>{content}<span style={{color:"white"}}>│</span></p>);
         setCurrentIndex((prevIndex) => prevIndex + 1);
-      }, 1);
+      }, 25);
 
       return () => clearTimeout(timeout);
     } else if (currentLine < text.length - 1) {

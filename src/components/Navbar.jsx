@@ -11,7 +11,6 @@ function Navbar(props) {
     
     let headerMenuItems = e.target.parentElement.parentElement;
     headerMenuItems.childNodes.forEach((value)=>{
-      console.log(value.childNodes[0])
       if (value.childNodes[0] != e.target)
         {
           value.childNodes[0].style.backgroundColor = null

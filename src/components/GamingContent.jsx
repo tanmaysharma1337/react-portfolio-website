@@ -38,9 +38,9 @@ const GamingContent = () => {
     if (currentIndex < text[currentLine].length) {
       const timeout = setTimeout(() => {
         setContent((prevText) => prevText + text[currentLine][currentIndex]);
-        setContentText(<p>{content}│</p>);
+        setContentText(<p>{content}<span style={{color:"white"}}>│</span></p>);
         setCurrentIndex((prevIndex) => prevIndex + 1);
-      }, 1);
+      }, 25);
 
       return () => clearTimeout(timeout);
     } else if (currentLine < text.length - 1) {

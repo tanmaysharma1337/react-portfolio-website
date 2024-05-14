@@ -11,8 +11,8 @@ const HomeContent = () => {
   const HomeContent = () => { 
     return ( 
       <div> 
-        <h1>Home</h1> 
-        <h2>Hello, I am Tanmay Sharma</h2> 
+        <h1>Hello World!</h1> 
+        <h2>I am Tanmay Sharma</h2> 
         <h3>Welcome to my Website!</h3> 
       </div>  
     )  
@@ -24,9 +24,9 @@ const HomeContent = () => {
     if (currentIndex < text[currentLine].length) {
       const timeout = setTimeout(() => {
         setContent((prevText) => prevText + text[currentLine][currentIndex]);
-        setContentText(<p>{content}│</p>);
+        setContentText(<p>{content} <span style={{color:"white"}}>│</span></p>);
         setCurrentIndex((prevIndex) => prevIndex + 1);
-      }, 1);
+      }, 25);
 
       return () => clearTimeout(timeout);
     } else if (currentLine < text.length - 1) {

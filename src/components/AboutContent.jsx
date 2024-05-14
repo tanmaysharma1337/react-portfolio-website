@@ -25,6 +25,10 @@ function AboutContent() {
         Programming is my playground, my canvas, and my passion.  
         It's where I feel most alive, exploring endless possibilities and constantly learning something new.  
         And that's why I'm here, ready to dive into the next adventure and see where it takes me. </p> 
+
+        <h3>Check out my socials</h3> 
+        <a style={{color:"lightblue"}} href="https://github.com/tanmaysharma1337">Github</a> 
+        <a style={{color:"lightblue"}} href="https://www.linkedin.com/in/tanmay-weezzee-sharma/">Linkedin</a>   
         </div> 
       )  
     }   
@@ -35,9 +39,9 @@ function AboutContent() {
     if (currentIndex < text[currentLine].length) {
       const timeout = setTimeout(() => {
         setContent((prevText) => prevText + text[currentLine][currentIndex]);
-        setContentText(<p>{content}│</p>);
+        setContentText(<p>{content}<span style={{color:"white"}}>│</span></p>);
         setCurrentIndex((prevIndex) => prevIndex + 1);
-      }, 1);
+      }, 25);
 
       return () => clearTimeout(timeout);
     } else if (currentLine < text.length - 1) {
