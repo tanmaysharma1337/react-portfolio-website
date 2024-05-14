@@ -106,9 +106,33 @@
     justify-content: end;
     display: flex;
     width: 100%;
+    align-items: center;
 }
 
 .header-right-content a
 {
     margin-right: 50px;
 }
+.code-executed .content
+    {
+        width: 50%;
+    }
+
+@media only screen and (max-width: 600px) {
+    .header-navigation-buttons li
+    {
+    list-style-type: none;
+    margin-left:0px;
+    margin-right:0px;
+    font-size: x-small;
+    }
+    .header-right-content a
+    {
+        font-size: x-small;
+        margin-right: 0px;
+    }
+    .code-executed .content
+    {
+        width: 100%;
+    }
+  }

@@ -6,14 +6,13 @@ const GamingContentRun = () => {
   return (
     <div className='code-executed'>
     <h2>Gaming</h2> 
-    <p style={{width:"50%"}}>Apart from programming , I also love playing games ,Gaming has been my passion since I can remember.
+    <p className='content'>Apart from programming , I also love playing games ,Gaming has been my passion since I can remember.
     I've not only played games for fun but also competed at a national level as an e-sports athlete (yeah thats what you call them) in Valorant and PUBG PC.
     <br />
     <br />
     <div>
     <img style={{borderRadius:"20px",margin:"20px"}} width={"400px"} src={tournamentImage}/><img style={{borderRadius:"20px",margin:"20px"}} width={"400px"} src={tournamentImage2} />
     </div>
-    
     <br />
     <br />
     Playing games got me thinking, "Hey, why not make my own?" So, I started to explore game development.
