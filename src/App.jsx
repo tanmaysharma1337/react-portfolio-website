@@ -12,6 +12,8 @@ import ProgrammingContent from "./components/ProgrammingContent.jsx";
 import ProgrammingContentRun from "./components/ProgrammingContentRun.jsx";
 import GamingContent from "./components/GamingContent.jsx";
 import GamingContentRun from "./components/GamingContentRun.jsx";
+import ProjectContent from "./components/ProjectContent.jsx";
+import ProjectContentRun from "./components/ProjectContentRun.jsx";
 
 function App() {
   const Pages = {
@@ -30,6 +32,10 @@ function App() {
     Gaming: {
       text: <GamingContent></GamingContent>,
       run: <GamingContentRun></GamingContentRun>,
+    },
+    Projects: {
+      text: <ProjectContent></ProjectContent>,
+      run: <ProjectContentRun></ProjectContentRun>,
     },
   };
 

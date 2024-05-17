@@ -13,11 +13,13 @@ const GamingContent = () => {
       <div>  
       <h2>Gaming</h2>  
       <p style={{width:"50%"}}>Apart from programming , I also love playing games ,Gaming has been my passion since I can remember. 
-      I've not only played games for fun but also competed at a national level as an e-sports athlete (yeah thats what you call them) in Valorant and PUBG PC. 
+      I've not only played games for fun but also competed at a national 
+      level as an e-sports athlete (yeah thats what you call them) in Valorant and PUBG PC. 
       <br /> 
       <br /> 
       <div> 
-      <img style={{borderRadius:"20px",margin:"20px"}} width={"400px"} src={tournamentImage}/><img style={{borderRadius:"20px",margin:"20px"}} width={"400px"} src={tournamentImage2} /> 
+      <img style={{borderRadius:"20px",margin:"20px"}} width={"400px"} src={tournamentImage}/> 
+      <img style={{borderRadius:"20px",margin:"20px"}} width={"400px"} src={tournamentImage2} />  
       </div> 
       <br /> 
       <br /> 
@@ -26,7 +28,8 @@ const GamingContent = () => {
       Playing games was fun, but making them? That's a whole new level of awesome.  
       <br /> 
       <br /> 
-      You can check out few games i made in my programming journey <a style={{color:"lightblue"}} href="https://play.google.com/store/apps/dev?id=6828699757730239188&hl=en_IN&gl=US">here</a> 
+      You can check out few games i made in my programming journey <a style={{color:"lightblue"}} 
+      href="https://play.google.com/store/apps/dev?id=6828699757730239188&hl=en_IN&gl=US">here</a> 
       </p> 
     </div> 
     )  

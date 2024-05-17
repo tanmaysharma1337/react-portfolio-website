@@ -49,6 +49,9 @@ function Navbar(props) {
             <a onClick={setPage}>Gaming</a>
           </li>
           <li>
+            <a onClick={setPage}>Projects</a>
+          </li>
+          <li>
             <a href="mailto:androtanmay43@gmail.com">Contact</a>
           </li>
         </ul>
