@@ -7,8 +7,7 @@ function ProjectContent() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentLine, setCurrentLine] = useState(0);
 
-  const text = `import React, { useEffect, useState } from "react";
-  import profilePicture from "../assets/profile-picture.png";
+  const text = `import React from "react";
   
   const ProjectContentRun = () => {
   

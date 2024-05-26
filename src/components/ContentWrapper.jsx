@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 
 const ContentWrapper = ({ children }) => {
   return <div className="main-content">{children}</div>;

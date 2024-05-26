@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import profilePicture from "../assets/profile-picture.png";
+import React from "react";
 
 const ProjectContentRun = () => {
 
