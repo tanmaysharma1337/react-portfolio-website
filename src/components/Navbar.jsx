@@ -1,34 +1,34 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/logo.webp";
 import runIcon from "../assets/run-code.png";
+import clickMe from "../assets/click-me.png";
 
 function Navbar(props) {
   const [currentPage, setCurrentPage] = useState("Home");
+  const [clickMeState, setClickMeState] = useState("block");
 
   function setPage(e) {
     props.page(e.target.innerText);
     setCurrentPage(e.target.innerText);
-    
+
     let headerMenuItems = e.target.parentElement.parentElement;
-    headerMenuItems.childNodes.forEach((value)=>{
-      if (value.childNodes[0] != e.target)
-        {
-          value.childNodes[0].style.backgroundColor = null
-        }
-      else
-        {
-          e.target.style.backgroundColor = "rgb(62, 63, 63)"
-        }
-    })
+    headerMenuItems.childNodes.forEach((value) => {
+      if (value.childNodes[0] != e.target) {
+        value.childNodes[0].style.backgroundColor = null;
+      } else {
+        e.target.style.backgroundColor = "rgb(62, 63, 63)";
+      }
+    });
   }
 
-  useEffect(()=>{
-    document.getElementById("default-page").click()
-  },[])
 
+  useEffect(() => {
+    document.getElementById("default-page").click();
+  }, []);
 
   function runPage() {
     props.run(currentPage);
+    setClickMeState("none");
   }
 
   return (
@@ -37,7 +37,9 @@ function Navbar(props) {
         <img className="header-logo" src={logo} alt="" />
         <ul className="header-navigation-buttons">
           <li>
-            <a id="default-page" onClick={setPage}>Home</a>
+            <a id="default-page" onClick={setPage}>
+              Home
+            </a>
           </li>
           <li>
             <a onClick={setPage}>About</a>
@@ -56,12 +58,22 @@ function Navbar(props) {
           </li>
         </ul>
         <div className="header-right-content">
-          <a className="run-code-text" onClick={runPage} style={{ marginRight: "10px" }}>
+          <a
+            className="run-code-text"
+            onClick={runPage}
+            style={{ marginRight: "10px" }}
+          >
             Run Code
           </a>
           <a onClick={runPage}>
             <img width="15px" src={runIcon} />{" "}
           </a>
+          <img
+            style={{ display: clickMeState }}
+            className="click-me-icon"
+            src={clickMe}
+            alt=""
+          />
         </div>
       </header>
     </div>

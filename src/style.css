@@ -93,6 +93,7 @@
 
 .header-right-content a {
   margin-right: 50px;
+  color: white;
 }
 .code-executed .content {
   width: 50%;
@@ -100,6 +101,19 @@
 
 .content-devider {
   width: 50%;
+}
+
+.click-me-icon {
+  top: 20px;
+  position: absolute;
+  animation: click-me-animation 5s infinite;
+}
+
+@keyframes click-me-animation
+{
+  0% {top: 50px;}
+  50% {top: 30px;}
+  100% {top: 50px;}
 }
 
 @media only screen and (max-width: 600px) {
@@ -113,8 +127,7 @@
     font-size: x-small;
     margin-right: 10px;
   }
-  .header-right-content
-  {
+  .header-right-content {
     align-items: center;
   }
   .code-executed .content {
@@ -128,18 +141,20 @@
   .content-devider {
     width: 100%;
   }
-  .about-page img
-  {
+  .about-page img {
     width: 100px;
     padding: 20px;
   }
-  .run-code-text
-  {
+  .run-code-text {
     display: none;
   }
-  .header ul{
+  .header ul {
     margin-left: -20px;
   }
+
+  .click-me-icon {
+    top: 30px;
+    width: 10%;
+    position: absolute;
+  }
 }
-
-
