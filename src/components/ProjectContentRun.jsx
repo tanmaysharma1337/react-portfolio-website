@@ -5,6 +5,10 @@ const ProjectContentRun = () => {
   return (
     <div className="code-executed">
       <h2>Projects</h2>
+      <h4><u>Software Development</u></h4>
+      <div className="project-container">
+      <a style={{color:"lightblue"}} href="https://github.com/tanmaysharma1337/powerly-qt">Powerly</a> - A PC Shutdown Scheduler and Management Application
+      </div>
       <h4><u>Web Development</u></h4>
       <div className="project-container">
       <a style={{color:"lightblue"}} href="https://pixel.tanmaysharma.me">Pixel Rangoli</a> - A Pixel Art Drawing Web App for Desktop and Mobile
@@ -14,9 +18,6 @@ const ProjectContentRun = () => {
       </div>
       <div className="project-container">
       <a style={{color:"lightblue"}} href="https://delhidentalhospital.com">Delhi Dental Hospital</a> - A Dental Clinic Website (Freelance Project)
-      </div>
-      <div className="project-container">
-      <a style={{color:"lightblue"}} href="https://levelupsocially.com">Level Up Socially</a> - A website where people can upgrade their social accounts (Freelance Project)
       </div>
       <h4><u>Game Development</u></h4>
       <div className="project-container">
