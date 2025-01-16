@@ -23,9 +23,8 @@ const GamingContent = () => {
       </div> 
       <br /> 
       <br /> 
-      Playing games got me thinking, "Hey, why not make my own?" So, I started to explore game development. 
-      It's like being the boss of your own adventure, creating worlds and stories for others to enjoy. 
-      Playing games was fun, but making them? That's a whole new level of awesome.  
+      Gaming has always been a big part of my life, but it wasn’t long before I wondered, "What goes into making these worlds come alive?"
+      That question drew me into game development, where I found the joy of combining creativity and technical skills to build experiences for others.
       <br /> 
       <br /> 
       You can check out few games i made in my programming journey <a style={{color:"lightblue"}} 

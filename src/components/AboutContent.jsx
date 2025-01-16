@@ -19,7 +19,7 @@ function AboutContent() {
         <p>Tanmay Sharma</p><p>Software Developer</p></div>  
         </div> 
         <h2>Hey there!</h2> 
-        <p style={{width:"40%"}}>Hey, I’m Tanmay Sharma, a software developer from India.
+        <p style={{width:"40%"}}>I’m Tanmay Sharma, a software developer from India.
         I work mainly with Python, JavaScript, and C#, and I enjoy diving into both frontend and backend development.
         I’m always exploring new things in programming and love finding creative ways to solve problems with code.
         When I’m not coding, you’ll probably find me gaming or looking into the latest tech trends.</p> 

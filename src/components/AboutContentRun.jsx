@@ -19,7 +19,7 @@ const AboutContentRun = () => {
       </div>
       <h2>Hey there!</h2>
       <p className="content">
-        Hey, I’m Tanmay Sharma, a software developer from India.
+        I’m Tanmay Sharma, a software developer from India.
         I work mainly with Python, JavaScript, and C#, and I enjoy diving into both frontend and backend development.
         I’m always exploring new things in programming and love finding creative ways to solve problems with code.
         When I’m not coding, you’ll probably find me gaming or looking into the latest tech trends.<br />
