@@ -5,16 +5,10 @@ const ProgrammingContentRun = () => {
     <div className="code-executed">
       <h2>Programming</h2>
       <p className="content">
-        My journey into programming began with a spark of curiosity that ignited
-        into a passionate love affair with code. It all started with a desire to
-        understand the mechanics behind the digital world, to unravel its
-        mysteries one line of code at a time. The thrill of seeing my ideas come
-        to life through programming fueled my passion, propelling me into a
-        realm where creativity meets logic. With each project, each challenge
-        conquered, my affection for programming deepened, as I discovered its
-        infinite possibilities and the joy of building something from scratch.
-        Programming isn't just a skill; it's a love story that continues to
-        evolve with every line of code I write.
+      I got into programming out of sheer curiosity—I just wanted to know how things worked behind the scenes in the digital world.
+      What started as a simple interest quickly turned into something I absolutely love.
+      There's nothing quite like the feeling of bringing an idea to life through code. Every project I work on, every challenge I solve, just deepens my passion for it.
+      Programming isn’t just a skill for me; it’s something I genuinely enjoy, and I’m always excited to see where it takes me next.
       </p>
 
       <h4>My current tech stack includes:</h4>
